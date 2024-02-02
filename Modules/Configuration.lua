@@ -1,3 +1,5 @@
+-- Hash: yOwEruXoHkeekHKlujYoQslmzoFygzIq
+
 local Config = {}
 
 function ensureFiles(Table)
