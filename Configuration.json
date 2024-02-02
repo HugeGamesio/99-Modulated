@@ -1,0 +1,12 @@
+{
+    "Script-Version":1,
+    
+    "Modules":{
+        "internalTestingModule":{
+            "Load":true,
+            "requirePremium":false,
+            "loadOrder":1,
+            "versionHash":"x"
+        }
+    }
+}
