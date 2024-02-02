@@ -25,9 +25,9 @@ function Module:Init(SVersion, Hash, Passkey, UIObject)
 	if Hash~=internalSecurity.Hash then internalSecurity.isMBrick = true end
 	if Passkey~=internalSecurity.Passkey then internalSecurity.isMBrick = true end
 	if internalSecurity.isMBrick then
-		pcall(function()
-			game.Players.LocalPlayer:Kick("[HugeGames] Modulation Inconsistency")
-		end)
+		--pcall(function()
+		--	game.Players.LocalPlayer:Kick("[HugeGames] Modulation Inconsistency")
+		--end)
 		return
 	else
 		internalConfig.scriptObject = UIObject
@@ -46,7 +46,7 @@ local internalUIStorage = {
 
 local internalFunctions = {
 	["KickPlayer"] = function()
-		local Tab = internalUIStorage["Tab_Testing"] or internalConfig.scriptObject:Tab("Testing")
+		local Tab = internalUIStorage["Tab_Testing"] or internalConfig.scriptObject:CreateTab("Testing")
 		if not internalUIStorage["Tab_Testing"] then internalUIStorage["Tab_Testing"] = Tab end
 	end,
 }
