@@ -1,3 +1,5 @@
+-- Hash: rgmSZJgDRewaTQQLMCaTwcRXZyUFDMst
+
 local Module = {}
 
 local internalConfig = {
