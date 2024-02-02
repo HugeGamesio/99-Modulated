@@ -1,7 +1,7 @@
 local Config = {}
 
 function ensureFiles(Table)
-	for i,v in pairs(table) do
+	for i,v in pairs(Table) do
 		if not v[2](v[1]) then
 			if v[3] == makefolder then
 				v[3](v[1])
